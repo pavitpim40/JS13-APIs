@@ -30,7 +30,7 @@
 // built-in : fetch fn
 const fetch = require('node-fetch');
 
-const BASE_URL = 'https://jsonplaceholder.typicode.com';
+// const BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 // 1.GET All
 // let endpoint = BASE_URL + '/posts';
@@ -39,10 +39,10 @@ const BASE_URL = 'https://jsonplaceholder.typicode.com';
 // };
 
 // 2.GET ByID
-let endpoint = BASE_URL + '/posts/20';
-let option = {
-  method: 'GET',
-};
+// let endpoint = BASE_URL + '/posts/20';
+// let option = {
+//   method: 'GET',
+// };
 
 // 3.GET Comments
 // let endpoint = BASE_URL + '/posts/1/comments';
