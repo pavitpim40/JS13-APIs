@@ -19,7 +19,19 @@ const option = {
 console.log(endpoint);
 
 const fetch = require('node-fetch');
-fetch(endpoint, option)
-  .then((result) => result.json())
-  .then((data) => console.log(data))
-  .catch((err) => console.log(error));
+// fetch(endpoint, option)
+//   .then((result) => result.json())
+//   .then((data) => console.log(data))
+//   .catch((err) => console.log(error));
+
+async function movieSearch() {
+  try {
+    let result = await fetch(endpoint, option);
+    let data = await result.json();
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+movieSearch();
